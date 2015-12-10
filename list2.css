@@ -28,11 +28,6 @@ ul li a{
 	border-top-right-radius: 10px;
 }
 
-ul li a:hover{
-	color: green;
-	background-color: white;
-}
-
 ul li ul{
 	list-style: none;
 	display: float;
@@ -42,13 +37,4 @@ ul li ul{
 	text-align: center;
 	background-color: green;
 	display: none;
-}
-
-ul li:hover ul{
-	display: block;
-	background-color: ;
-}
-
-ul li ul li a:hover{
-	border-radius: 0px;
 }
