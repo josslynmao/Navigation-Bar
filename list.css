@@ -1,0 +1,56 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#nav{
+	background-color: green;
+	height: 40px;
+	width: 800px;
+	padding-top: 10px;
+}
+
+ul li{
+	list-style: none;
+	display: float;
+	float: left;
+	width: 150px;
+	line-height: 40px;/*垂直方向文本居中*/
+	text-align: center;
+}
+
+ul li a{
+	padding: 0px 20px;/*自适应且hover时左右全满*/
+	text-decoration: none;
+	color: white;
+	display: block;/*设置链接为块级元素。hover时整个块发生改变。*/
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+ul li a:hover{
+	color: green;
+	background-color: white;
+}
+
+ul li ul{
+	list-style: none;
+	display: float;
+	float: left;
+	width: 150px;
+	line-height: 40px;/*垂直方向文本居中*/
+	text-align: center;
+	background-color: green;
+	display: none;
+	border: 2px solid green;
+}
+
+ul li:hover ul{
+	display: block;
+	background-color: ;
+}
+
+ul li ul li a:hover{
+	border-radius: 0px;
+
+}
