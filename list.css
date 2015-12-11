@@ -1,16 +1,18 @@
 *{
 	margin: 0px;
 	padding: 0px;
+	font-family: Helvetica;
 }
 
-#nav{
+#nav1{
 	background-color: green;
 	height: 40px;
-	width: 800px;
+	width: 750px;
 	padding-top: 10px;
+	margin: 0px auto;
 }
 
-ul li{
+#nav1 li{
 	list-style: none;
 	display: float;
 	float: left;
@@ -19,7 +21,7 @@ ul li{
 	text-align: center;
 }
 
-ul li a{
+#nav1 li a{
 	padding: 0px 20px;/*自适应且hover时左右全满*/
 	text-decoration: none;
 	color: white;
@@ -28,12 +30,12 @@ ul li a{
 	border-top-right-radius: 10px;
 }
 
-ul li a:hover{
+#nav1 li a:hover{
 	color: green;
 	background-color: white;
 }
 
-ul li ul{
+#nav1 li ul{
 	list-style: none;
 	display: float;
 	float: left;
@@ -44,11 +46,15 @@ ul li ul{
 	display: none;
 }
 
-ul li:hover ul{
+#nav1 li:hover ul{/*移到导航栏显示下拉菜单*/
 	display: block;
-	background-color: ;
+	background-color: green;
 }
 
-ul li ul li a:hover{
+#nav1 li ul li a:hover{
 	border-radius: 0px;
+}
+
+#navigationbar1{
+	height: 190px;
 }

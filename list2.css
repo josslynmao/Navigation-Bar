@@ -1,16 +1,18 @@
 *{
 	margin: 0px;
 	padding: 0px;
+	font-family: Helvetica;
 }
 
-#nav{
+#nav2{
 	background-color: green;
 	height: 40px;
-	width: 800px;
+	width: 750px;
 	padding-top: 10px;
+	margin: 0px auto;
 }
 
-ul li{
+#nav2 li{
 	list-style: none;
 	display: float;
 	float: left;
@@ -19,16 +21,25 @@ ul li{
 	text-align: center;
 }
 
-ul li a{
+#nav2 li a{
 	padding: 0px 20px;/*自适应且hover时左右全满*/
 	text-decoration: none;
 	color: white;
 	display: block;/*设置链接为块级元素。hover时整个块发生改变。*/
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
 }
 
-ul li ul{
+#nav2 li a:hover{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: white;
+	color: green;
+}
+
+#nav2 li ul li a:hover{
+	border-radius: 0;
+}
+
+#nav2 li ul{
 	list-style: none;
 	display: float;
 	float: left;
@@ -37,4 +48,9 @@ ul li ul{
 	text-align: center;
 	background-color: green;
 	display: none;
+}
+
+
+#navigationbar2{
+	height: 190px;
 }

@@ -4,17 +4,18 @@
 	<meta charset="UTF-8">
 	<title>CSS JS jQuery三种方式实现菜单栏</title>
 	<link rel="stylesheet" href="list.css"/>
+	<link rel="stylesheet" href="list2.css"/>
 </head>
 <body>
-	<h3>CSS Navigation</h3>
-	<ul id="nav">
+	<!--CSS方式实现下拉菜单-->
+	<h3 style="text-align:center">CSS Navigation</h3>
+	<div id="navigationbar1">
+	<ul id="nav1">
 		<li>
 			<a href="#">Home</a>
-			<ul>
-				<li><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-			</ul>
+		</li>
+		<li>
+			<a href="#">CV</a>
 		</li>
 		<li>
 			<a href="#">Blog</a>
@@ -41,5 +42,91 @@
 			</ul>
 		</li>
 	</ul>
+	</div>
+
+	<!--JS方式实现下拉菜-->
+	<h3 style="text-align:center">JS Navigation</h3>
+	<div id="navigationbar2">
+	<ul id="nav2">
+		<li>
+			<a href="#">Home</a>
+			<ul>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">CV</a>
+			<ul>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			</ul>
+		</li>
+		<li onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)">
+			<a href="#">Blog</a>
+			<ul>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			</ul>
+		</li>
+		<li onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)">
+			<a href="#">Web Work</a>
+			<ul>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			</ul>
+		</li>
+		<li onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)">
+			<a href="#">Paiting</a>
+			<ul>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			</ul>
+		</li>
+	</ul>
+	</div>
+
+	<!--jquery方式实现下拉菜-->
+	<h3 style="text-align:center">jQuery Navigation</h3>
+	<div id="navigationbar2">
+	<ul id="nav2">
+		<li>
+			<a href="#">Home</a>
+		</li>
+		<li>
+			<a href="#">CV</a>
+		</li>
+		<li>
+			<a href="#">Blog</a>
+			<ul>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Web Work</a>
+			<ul>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Paiting</a>
+			<ul>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			</ul>
+		</li>
+	</ul>
+	</div>
+	<script type="text/javascript" src="list2.js"></script>
 </body>
 </html>
